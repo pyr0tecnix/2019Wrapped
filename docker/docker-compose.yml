@@ -1,0 +1,9 @@
+version: '3'
+
+
+services:
+
+  web:
+    build: ./flask/
+    container_name: deseq-web
+    restart: always
