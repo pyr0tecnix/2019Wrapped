@@ -145,20 +145,7 @@ docker)
 #Pass info to console
 *)
 echo -e "$CYAN "
-echo -e "$CYAN ############# Expedicar Console Tools ############# "
+echo -e "$CYAN ############# Console Tools ############# "
 echo -e "$CYAN"
-echo -e "$CYAN ################# CODE QUALITY $CYAN ################### $NORMAL"
-echo -e "$NORMAL$SHORT $YELLOW code ( $CYAN install (composer) $YELLOW)"
-echo -e "$NORMAL$SHORT $YELLOW test ( $CYAN install | all | list | {--feature-name} $YELLOW)"
-echo -e "$NORMAL$SHORT $YELLOW test ex : ( $GREEN ./console.sh test all $YELLOW)"
-echo -e "$NORMAL$SHORT $YELLOW test ex : ( $GREEN ./console.sh test all-sandbox $YELLOW)"
-echo -e "$NORMAL$SHORT $YELLOW test ex : ( $GREEN ./console.sh test journey $YELLOW)"
-echo -e "$NORMAL$SHORT $YELLOW test ex : ( $GREEN ./console.sh test journey/add-premium.feature $YELLOW)"
-
-echo -e "$CYAN ##################### DB related $NORMAL"
-echo -e "$NORMAL$SHORT $YELLOW get ( sandbox | prod ) [database-name]"
-echo -e "$NORMAL$SHORT $YELLOW db ( save-local versionTag | restore-local filename)"
-
-echo -e "$CYAN ##################### Env"
-echo -e "$NORMAL$SHORT $YELLOW docker (start | stop | create | ssh [container-suffix] | ssh-web | ssh-phpfpm | ssh-db | phplog | mysqllog | phpmyadmin | stats | redis-ui ) $NORMAL"
+echo -e "$NORMAL$SHORT $YELLOW docker (start | stop | restart | create | ssh-web | stats) $NORMAL"
 esac
